@@ -871,6 +871,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-Darkgray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(92 91 91 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\/img\/banner-bg\.jpg\'\)\] {
   background-image: url('/img/banner-bg.jpg');
 }
