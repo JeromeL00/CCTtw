@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+    scroll-behavior: smooth;
+}
+.header nav ul li a {
+    @apply hover:border-b-4 border-primary transition-[0.6s] pb-1
+}
+
+.header .toggleMenu span {
+    height: 0.2rem;
+    width: 2rem;
+    @apply bg-dark block mb-1 ml-auto lg:hidden
+}
+
+.headerMobileNav {
+    max-height: 0;
+    overflow: hidden;
+}
+.headerMobileNav.active {
+    max-height: 500px;
+}
+
+.headerMobileNav ul li a:hover {
+    @apply bg-primary transition-[0.6s]
+}
+
+.bannerWrapper {
+    background-image: linear-gradient(to right, rgba(255,255,255, 1) 25%, rgba(255,255,255, .7) 40%, rgba(255,255,255, .4) 50%, transparent);
+    @apply left-0 top-0 w-[100%] h-[100vh] p-[4.3rem]
+}
+.cards:hover {
+    transform: scale(1.10);
+}
+.sliderCard {
+    display: inline-flex !important;
+}
+.tns-outer{
+    @apply lg:flex w-[70%] ml-auto
+}
+.tns-controls button:first-child{
+    @apply  bg-secondary rounded-full w-10 h-10 text-dark 
+}
+.tns-controls button:last-child{
+    @apply  bg-secondary rounded-full w-10 h-10 text-dark
+} 
