@@ -30,8 +30,9 @@
                     <nav>
                         <ul class="flex gap-10 font-medium">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
+                            <li><a class="active" href="about.html">About</a></li>
                             <li><a href="course.html">Courses</a></li>
+                            <li><a href="updates.html">Updates</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
@@ -40,10 +41,11 @@
 
             <div class="headerMobileNav bg-[#fafafa] ml-[auto] transition-all duration-300">
                     <ul class="gap-10 font-semibold text-center  text-dark">
-                        <li><a class="block p-3" href="#">Home</a></li>
-                        <li><a class="block p-3" href="#">About</a></li>
-                        <li><a class="block p-3" href="#">Courses</a></li>
-                        <li><a class="block p-3" href="#">Contact</a></li>
+                        <li><a class="block p-3" href="index.html">Home</a></li>
+                        <li><a class="block p-3" href="about.html">About</a></li>
+                        <li><a class="block p-3" href="course.html">Courses</a></li>
+                        <li><a class="block p-3" href="updates.html">Updates</a></li>
+                        <li><a class="block p-3" href="contact.html">Contact</a></li>
                     </ul>
             </div>
             
@@ -57,7 +59,7 @@
                 <h1 class="text-dark text-3xl font-bold text-center mb-7">About Us</h1>
                 <p class="w-[70%] mx-auto text-center mb-10">"Welcome to our company, where our passion for craniocervical and craniosacral therapy drives our commitment to providing high-quality education and training. With years of experience and expertise in the field, our team of instructors is dedicated to helping healthcare professionals improve their skills and expand their knowledge. Join us on this exciting journey and discover the potential to enhance your practice and improve the lives of those you serve."</p>
 
-                <div class="aboutItems flex">
+                <div class="aboutItems lg:flex">
                     <div class="aboutCards bg-dark text-white p-7 text-justify">
                         <h2 class="mb-5 font-bold">Our Approach</h2>
                         <p>At our company, we take a holistic approach to craniocervical and craniosacral therapy. Our approach is centered around the belief that the health of the craniocervical junction and craniosacral system is crucial to overall well-being, and that imbalances in this system can have a profound impact on physical and emotional health. </p>
@@ -70,7 +72,7 @@
                         <h2 class="mb-5 font-bold">Take our Course</h2>
                         <p class="mb-10">Join us on this exciting journey and discover the potential to enhance your practice and improve the lives of those you serve.</p>
 
-                        <a class="bg-white text-dark p-2 text-sm rounded-full font-medium" href="#">Create an appointment</a>
+                        <a class="bg-white text-dark p-2 text-sm rounded-full font-medium hover:bg-dark hover:text-white transition-[0.6s]" href="#">Create an appointment</a>
                     </div>
                 </div>
             </div>
@@ -79,8 +81,8 @@
 
     <section class="bg-secondary p-7">
         <div class="container">
-            <div class="flex justify-between items-center">
-                <p class="w-[60%] mr-auto text-white font-medium">Sign up for our craniosacral seminar course and receive comprehensive training from experienced instructors in this exciting field</p>
+            <div class="lg:flex justify-between items-center">
+                <p class="lg:w-[60%] mr-auto text-white font-medium mb-5">Sign up for our craniosacral seminar course and receive comprehensive training from experienced instructors in this exciting field</p>
     
             <a class="py-3 px-5 bg-white text-dark rounded-full font-bold hover:bg-dark hover:text-white transition-[0.6s]" href="#">Create an appointment</a>
             </div>
@@ -96,9 +98,9 @@
                 <h3 class="text-gray font-bold text-right text-[0.5rem] tracking-[0.2rem]">INTERNATIONAL</h3>
             </div>
 
-            <div class="footerWrapper flex">
+            <div class="footerWrapper lg:flex">
                 <div>
-                        <p class="w-[60%] mt-10">where our passion for craniocervical and craniosacral therapy drives our commitment to providing high-quality education and training. With years of experience and expertise in the field, our team of instructors is dedicated to helping healthcare professionals improve their skills and expand their knowledge.</p>
+                        <p class="lg:w-[60%] mt-10">where our passion for craniocervical and craniosacral therapy drives our commitment to providing high-quality education and training. With years of experience and expertise in the field, our team of instructors is dedicated to helping healthcare professionals improve their skills and expand their knowledge.</p>
                 </div>
                 
                 
@@ -114,5 +116,14 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const toggleMenu = document.querySelector('.toggleMenu');
+        const headerMobileNav = document.querySelector('.headerMobileNav');
+
+        toggleMenu.addEventListener('click', ()=>{
+            headerMobileNav.classList.toggle('active');
+        })
+    </script>
 </body>
 </html>
